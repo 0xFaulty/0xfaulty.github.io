@@ -1,0 +1,37 @@
+/*
+---- что это?
+* простой скрипт для рисования/дефа рисунков на pxls.space
+   
+--- как пользоваться?
+* открываешь pxls.space, ждешь пока прогрузится
+* открываешь JS консоль браузера и копипастишь туда код внизу.
+* Firefox - (Ctrl+Shift+K); Chrome - (Ctrl+Shift+I)
+
+* то же самое делаешь как можно в большем количестве вкладок с разными vpn
+* капчу придется вводить руками пару раз потом все пойдет само
+* но это не значит что за скриптом не нужно следить!
+
+* Если необходимо случайное заполнение заменяем ссылку основного скрипта на
+* script.src = "https://0xfaulty.github.io/autopxls_rand.js";
+
+* Если изображение целое будет выводить "MViPD is correct"
+
+* разобрался и захостил скрипты Faulty для МВиПД
+*/
+ 
+var script = document.createElement('script');
+script.src = "https://0xfaulty.github.io/autopxls_norm.js";
+script.onload = function () {
+    var images = [
+      {
+        title: "MViPD",
+        x: 588,
+        y: 0,
+        image: "https://0xfaulty.github.io/mvipd.png"
+      }
+    ]
+ 
+    AutoPXLS(images);
+};
+ 
+document.head.appendChild(script);
